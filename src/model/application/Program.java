@@ -18,7 +18,6 @@ public class Program {
 
         System.out.println("=== TEST1: seller, findById ===");
         Seller seller = sellerDao.findById(3);
-
         System.out.println(seller);
 
         System.out.println("\n=== TEST2: seller, findByDepartment ===");
@@ -39,7 +38,7 @@ public class Program {
         sellerDao.insert(newSeller);
         System.out.println("Inserted New Id: " + newSeller.getId());
 
-        System.out.println("\n=== TEST5: seller, insert ===");
+        System.out.println("\n=== TEST5: seller, update ===");
         seller = sellerDao.findById(1);
         seller.setName("Marta Wayne");
         sellerDao.update(seller);
